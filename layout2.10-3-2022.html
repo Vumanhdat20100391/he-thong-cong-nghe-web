@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10/3/2022</title>
+<style>
+        *{
+            margin: 0px auto;
+            padding: 0px;
+        }
+    body{
+            background-image: url(../img/background.jpg);
+        }
+    .wrapper{
+            height: auto;
+            width: 1089px;
+            background-color:antiquewhite;
+        }
+        
+    nav{
+            height: 50px;
+            width: 1089px;
+            line-height: 50px;
+            background-color: rgb(245, 207, 161);
+        }
+    header{
+            height: 150px;
+            width: 1089px;
+            background-image: url(../img/header1.png);
+            text-align: center;
+            line-height: 150px;
+            font-style: 100px;
+            color: orange;
+            text-shadow: 2px 2px 2px #cc0011;
+        }
+    .content{
+            height: 400px;
+            width: 1089px;
+            background-color:rgb(233, 172, 87);
+    }
+    aside {
+        height: 400px;
+        width: 400px;
+        background-color: rgb(126, 121, 114);
+        float: left ;
+    }
+    section {
+        height: 400px;
+        width: 689px;
+        background-color: rgb(241, 247, 248);
+        float: left;
+    }
+
+    .menu li {
+        float: left;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        text-indent: 20px;
+        background-color: rgb(245, 207, 161);
+        position: relative;
+    }
+    a{
+        color: yellow;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu li:hover {
+        background-color: rgb(177, 141, 87);
+    }
+    li:hover>a {
+        color: blue;
+        font-style: italic;
+    }
+    .menu li .submenu{
+        display: none;
+        position: absolute;
+    }
+    .menu li:hover .submenu{
+        display: block;
+    }
+    nav span form #txtEmail {
+        padding: 3px;
+        color: blue;
+    }
+    nav span form #btnGO{
+        padding: 3px;
+        color: rgb(219, 115, 30);
+        border-radius:  50%;
+        text-shadow: 2px 2px 2px #cc0011;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav> 
+            <ul class="menu">
+                <li><a.href="https://iuh.edu.vn">HOME</a.></li>
+                <li><a.href="">SERVICES</a></li>
+                <li><a.herf="">CONTACT</a> 
+                <ul class="submenu">
+                   <li><a.href="">PHONE</a></li>
+                   <li><a.href="">INTERNET</a></li>
+                   <li><a.href="">TIVI</a></li>
+                </ul> 
+                </li>
+                <li><a.href="">ABOUT</a></li>
+                <li><a.href="">HELP</a></li>
+            </ul>
+            <span>
+
+                <form action="dangky.php">
+                    <laber for="lblEmail">Email: </laber>
+                    <input type="email" name="txtEmail" id="txtEmail" required placeholder="nhap email">
+                    <input type="submit" value="GO" id="btnGO">
+                </form>
+            </span>
+        </nav>
+        <header> VIET NAM TOI YEU </header>
+        <div class="content">
+            <aside> 
+                <article>
+                    <h5 style="position: absolute; font-weight: bold; color: white;text-shadow:10px 20px 20px rgb(107, 41, 230) ;">GAME SHOW</h5>
+                    <img src="../img/hd1.PNG" alt="" srcset="">
+                </article>
+                <article>
+                    <h5>HOAT DONG 2</h5>
+                    <img src="../img/h2.PNG" alt="" srcset="">
+                </article>
+                <article>
+                    <h5>HOAT DONG 3</h5>
+                    <img src="../img/h3.PNG" alt="" srcset="">
+                </article>
+            </aside>
+            <section> 
+                <form action="dang ky.php">
+                    <fieldset>
+                        <legend>he thong cua ban</legend>
+                        <label for="lblHoTen">Ho Ten</label>
+                        <input type="text" name="txtHt" id="txtHT" required placeholder="nhap ho va ten"> <br> <br>
+                        <laber for="lblEmail"Email ></laber>
+                        <input type="email" name="txtEmail" id="txtEmail" required placeholder="nhap email"> <br> <br>
+                        <laber for="lblNS">Ngay Sinh</laber>
+                        <input type="date" name="txtNS" id="txtNS" required placeholder="Ngay Sinh"> <br> <br>
+                        <laber for="lblGT">Gioi tinh</laber>
+                        <input type="radio" name="radNam" id="radNam" value="Nam" checked> <laber for="Nam">Nam</laber> 
+                        <input for="radio" name="radNu" id="radNu" value="Nam" required> <laber for="Nu">Nu</laber> <br> <br>
+                        <input type="submit" value="GO" id="btnGO">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
